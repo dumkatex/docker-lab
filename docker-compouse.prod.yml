@@ -1,0 +1,9 @@
+services:
+  nginx:
+    restart: always
+
+  backend:
+    restart: always
+
+  postgres:
+    restart: always
