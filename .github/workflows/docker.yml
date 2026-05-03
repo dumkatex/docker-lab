@@ -20,7 +20,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build
-        run: docker build -t dumkatex/my-backend:latest ./backend
+        run: docker build -t genja2232/my-backend:latest ./backend
 
       - name: Push
-        run: docker push dumkatex/my-backend:latest
+        run: docker push genja2232/my-backend:latest
