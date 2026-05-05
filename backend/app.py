@@ -1,9 +1,14 @@
 from fastapi import FastAPI
+
+
+
 import psycopg2
 import os
-
+from prometheus_fastapi_instrumentator import Instrumentator
 
 app = FastAPI()
+
+Instrumentator().instrument(app).expose(app)
 
 DB_CONFIG = {
     "host": "postgres",
