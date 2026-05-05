@@ -18,7 +18,7 @@ DB_CONFIG = {
 
 @app.get("/")
 def read_root():
-    return {"message": "Backend fucking is working"}
+    return {"message": "Backend fucking3 is working"}
 
 
 @app.get("/db")
